@@ -1,0 +1,67 @@
+name: All You Need
+main: com.crystalcraftmc.allyouneed.Main
+version: 1.0
+
+commands:
+  ct:
+    description: Open craft table
+    usage: /ct
+    permission: ayn.ct
+  ender:
+    description: Open ender chest
+    usage: /ender
+    permission: ayn.ender
+  tpgo:
+    description: Teleport to another player
+    usage: /tpgo <Player>
+    permission: ayn.tpgo
+  definespawn:
+    description: Set the world spawn
+    usage: /setspawn
+    permission: ayn.definespawn
+  spawn:
+    description: Go to the world spawn
+    usage: /spawn
+    permission: ayn.spawn
+  home:
+    description: Go home
+    usage: /home
+    permission: ayn.home
+  definehome:
+    description: Define your home
+    usage: /definehome
+    permission: ayn.sethome
+  heal:
+    description: Heals you or a player
+    usage: /heal [player]
+    permission: ayn.heal
+    
+permissions:
+  ayn.*:
+    children:
+      ayn.ct: true
+      ayn.ender: true
+      ayn.tpgo: true
+      ayn.definespawn: true
+      ayn.spawn: true
+      ayn.home: true
+      ayn.definehome: true
+      ayn.heal: true
+  ayn.ct:
+    default: true
+  ayn.ender:
+    default: true
+  ayn.tpgo:
+    default: op
+  ayn.definespawn:
+    default: op
+  ayn.spawn:
+    default: true
+  ayn.home:
+    default: true
+  ayn.sethome:
+    default: true
+  ayn.heal:
+    default: op
+  ayn.usebannedblocks:
+    default: op

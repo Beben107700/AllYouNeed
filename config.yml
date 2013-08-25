@@ -1,0 +1,7 @@
+auto-update: true
+spawn-message: Welcome to the spawn!
+usebannedblock-message: "§4don't"
+ban-water: true
+ban-lava: true
+BannedBlocks:
+- 1
