@@ -1,6 +1,8 @@
 auto-update: true
 spawn-message: Welcome to the spawn!
-usebannedblock-message: "§4don't"
+rules:
+- "Be nice!"
+- "Don't grief!"
 ban-water: true
 ban-lava: true
 BannedBlocks:
