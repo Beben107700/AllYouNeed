@@ -10,6 +10,7 @@ import com.crystalcraftmc.allyouneed.Commands.AYNDefineSpawn;
 import com.crystalcraftmc.allyouneed.Commands.AYNEnder;
 import com.crystalcraftmc.allyouneed.Commands.AYNHeal;
 import com.crystalcraftmc.allyouneed.Commands.AYNHome;
+import com.crystalcraftmc.allyouneed.Commands.AYNKickall;
 import com.crystalcraftmc.allyouneed.Commands.AYNRules;
 import com.crystalcraftmc.allyouneed.Commands.AYNSetHome;
 import com.crystalcraftmc.allyouneed.Commands.AYNSpawn;
@@ -71,6 +72,7 @@ public final class Main extends JavaPlugin
 		getCommand("home").setExecutor(new AYNHome(this));
 		getCommand("heal").setExecutor(new AYNHeal(this));
 		getCommand("rules").setExecutor(new AYNRules(this));
+		getCommand("kickall").setExecutor(new AYNKickall(this));
 		//Commands/
 		
 

@@ -1,6 +1,6 @@
 name: All You Need
 main: com.crystalcraftmc.allyouneed.Main
-version: 1.0
+version: 1.1
 
 commands:
   ct:
@@ -39,6 +39,10 @@ commands:
     description: Displays the server rules
     usage: /rules
     permission: ayn.rules
+  kickall:
+    description: Kick all players
+    usage: /kickall [reason]
+    permission: ayn.kickall
     
 permissions:
   ayn.*:
@@ -53,6 +57,7 @@ permissions:
       ayn.heal: true
       ayn.rules: true
       ayn.usebannedblocks: true
+      ayn.kickall: true
   ayn.ct:
     default: true
   ayn.ender:
@@ -73,3 +78,5 @@ permissions:
     default: op
   ayn.rules:
     default: true
+  ayn.kickall:
+    default: op

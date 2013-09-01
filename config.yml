@@ -6,4 +6,4 @@ rules:
 ban-water: true
 ban-lava: true
 BannedBlocks:
-- 1
+- 19

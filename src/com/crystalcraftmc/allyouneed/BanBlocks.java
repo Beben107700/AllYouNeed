@@ -55,13 +55,14 @@ public class BanBlocks implements Listener {
 				!(event.getPlayer().hasPermission("ayn.usebannedblocks"))){
 			event.setCancelled(true);
 			event.getPlayer().sendMessage(bmsg);
+			return;
 		}
 		//WATER
 		if(event.getItem().getType() == Material.WATER_BUCKET && plugin.getConfig().getBoolean("ban-water") &&
 				!(event.getPlayer().hasPermission("ayn.usebannedblocks"))){
 			event.setCancelled(true);
 			event.getPlayer().sendMessage(bmsg);
+			return;
 		}
 	}
-	
 }
