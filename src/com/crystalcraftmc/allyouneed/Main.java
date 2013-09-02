@@ -84,6 +84,8 @@ public final class Main extends JavaPlugin
     {
         // TODO Insert logic to be performed when the plugin is disabled
     	getLogger().info("All You Need has been disabled!");
-    	this.saveConfig();
+    	//this.saveConfig();
+    	//this holds the config in cache, which disallows ppl to change config args and
+    	//reload the server.
     }
 }
