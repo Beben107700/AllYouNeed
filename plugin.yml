@@ -4,7 +4,7 @@ version: 0.6
 
 commands:
   ct:
-    description: Open craft table
+    description: Open crafting table
     usage: /ct
     permission: ayn.ct
   ender:
@@ -43,6 +43,7 @@ commands:
     description: Kick all players
     usage: /kickall [reason]
     permission: ayn.kickall
+
     
 permissions:
   ayn.*:
@@ -58,6 +59,7 @@ permissions:
       ayn.rules: true
       ayn.usebannedblocks: true
       ayn.kickall: true
+
   ayn.ct:
     default: true
   ayn.ender:

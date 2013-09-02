@@ -9,18 +9,21 @@ import org.bukkit.entity.Player;
 
 import com.crystalcraftmc.allyouneed.Main;
 
-public class AYNKickall implements CommandExecutor{
+public class AYNKickall implements CommandExecutor {
 	Main plugin;
-	public AYNKickall(Main m){
-		plugin = m;		
+
+	public AYNKickall(Main m) {
+		plugin = m;
 	}
-	public boolean onCommand(CommandSender sender, Command cmd, String label, String[]args){
+
+	public boolean onCommand(CommandSender sender, Command cmd, String label,
+			String[] args) {
 		String message = "Kicked by an operator";
-		if(args.length > 0){
+		if (args.length > 0) {
 			message = Arrays.toString(args);
 		}
-		for(Player p : plugin.getServer().getOnlinePlayers()){
-			if(p != sender) {
+		for (Player p : plugin.getServer().getOnlinePlayers()) {
+			if (p != sender) {
 				p.kickPlayer(message);
 			}
 		}

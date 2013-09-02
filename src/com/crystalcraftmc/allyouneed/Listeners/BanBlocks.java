@@ -1,4 +1,4 @@
-package com.crystalcraftmc.allyouneed;
+package com.crystalcraftmc.allyouneed.Listeners;
 
 import java.util.List;
 
@@ -9,6 +9,8 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
+
+import com.crystalcraftmc.allyouneed.Main;
 
 
 public class BanBlocks implements Listener {
