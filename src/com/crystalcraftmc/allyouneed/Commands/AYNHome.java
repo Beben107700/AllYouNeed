@@ -25,6 +25,7 @@ public class AYNHome implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command cmd, String label,
 			String[] args) {
 
+		
 		if (sender instanceof ConsoleCommandSender) {
 			sender.sendMessage(ChatColor.RED
 					+ "Only a player can execute this command");

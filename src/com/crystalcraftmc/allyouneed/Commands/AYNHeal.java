@@ -9,6 +9,7 @@ import com.crystalcraftmc.allyouneed.Main;
 
 public class AYNHeal implements CommandExecutor {
 	Main plugin;
+	
 	public AYNHeal(Main main){
 		this.plugin = main;
 	}

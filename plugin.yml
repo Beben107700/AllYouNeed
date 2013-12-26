@@ -1,24 +1,44 @@
 name: All You Need
 main: com.crystalcraftmc.allyouneed.Main
 version: 0.6
+load : POSTWORLD
+authors: [Beben107700, jflory7]
 
 commands:
   ct:
     description: Open crafting table
     usage: /ct
     permission: ayn.ct
+    aliases: [craft]
   ender:
     description: Open ender chest
     usage: /ender
     permission: ayn.ender
-  tpgo:
+    aliases: [ender]
+  tp:
     description: Teleport to another player
-    usage: /tpgo <Player>
+    usage: /tp <Player>
     permission: ayn.tpgo
-  definespawn:
+    aliases: [teleport]
+  tphere:
+    descritpion: Teleport another player to you
+    usage: /tphere <Player>
+    permission: ayn.tpgo
+  tppos:
+    description: Teleport to a specific position
+    usage: /tppos <X> <Y> <Z>
+    permission: ayn.tpgo
+    aliases: [tpcoord, tploc]
+  mypos:
+    description: Check your location
+    usage: /mypos
+    permission: ayn.mypos
+    aliases: [myloc, mylocation, where, checkpos]
+  setspawn:
     description: Set the world spawn
     usage: /setspawn
     permission: ayn.definespawn
+    aliases: [definespawn]
   spawn:
     description: Go to the world spawn
     usage: /spawn
@@ -27,10 +47,11 @@ commands:
     description: Go home
     usage: /home
     permission: ayn.home
-  definehome:
+  sethome:
     description: Define your home
-    usage: /definehome
+    usage: /sethome
     permission: ayn.sethome
+    aliases: [definehome]
   heal:
     description: Heals you or a player
     usage: /heal [player]
@@ -43,6 +64,12 @@ commands:
     description: Kick all players
     usage: /kickall [reason]
     permission: ayn.kickall
+    aliases: [gtfoall, allgtfo]
+  fly:
+    description: Fly
+    usage: /fly (player)
+    permission: ayn.fly
+    aliases: [iwannafly]
 
     
 permissions:
@@ -59,7 +86,8 @@ permissions:
       ayn.rules: true
       ayn.usebannedblocks: true
       ayn.kickall: true
-
+      ayn.fly: true
+      ayn.mypos: true
   ayn.ct:
     default: true
   ayn.ender:
@@ -82,3 +110,7 @@ permissions:
     default: true
   ayn.kickall:
     default: op
+  ayn.fly:
+    default: op
+  ayn.mypos:
+    default: true

@@ -2,13 +2,10 @@ package com.crystalcraftmc.allyouneed.Listeners;
 
 import java.util.List;
 
-
 import org.bukkit.ChatColor;
-import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockPlaceEvent;
-import org.bukkit.event.player.PlayerInteractEvent;
 
 import com.crystalcraftmc.allyouneed.Main;
 
@@ -38,7 +35,7 @@ public class BanBlocks implements Listener {
 			//converting the string to int
 			int BannedId = Integer.parseInt(s);
 			
-			if(event.getBlock().getTypeId() == BannedId  && 
+			if(event.getBlock().getType().getId() == BannedId  && 
 					!(event.getPlayer().hasPermission("ayn.usebannedblocks"))){
 				
 				event.setCancelled(true);
@@ -47,24 +44,6 @@ public class BanBlocks implements Listener {
 				
 			}
 			
-		}
-	}
-	
-	@EventHandler
-	public void onPlayerInteraction(PlayerInteractEvent event){
-		//LAVA
-		if(event.getItem().getType() == Material.LAVA_BUCKET && plugin.getConfig().getBoolean("ban-lava")&& 
-				!(event.getPlayer().hasPermission("ayn.usebannedblocks"))){
-			event.setCancelled(true);
-			event.getPlayer().sendMessage(bmsg);
-			return;
-		}
-		//WATER
-		if(event.getItem().getType() == Material.WATER_BUCKET && plugin.getConfig().getBoolean("ban-water") &&
-				!(event.getPlayer().hasPermission("ayn.usebannedblocks"))){
-			event.setCancelled(true);
-			event.getPlayer().sendMessage(bmsg);
-			return;
 		}
 	}
 }

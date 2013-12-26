@@ -18,7 +18,6 @@ public class AYNRules implements CommandExecutor{
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[]args){
 		
 		List<String> rules = plugin.getConfig().getStringList("rules");
-		
 		for(String s : rules){
 			sender.sendMessage(s);
 		}
