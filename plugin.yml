@@ -1,6 +1,6 @@
 name: All You Need
 main: com.crystalcraftmc.allyouneed.Main
-version: 0.6
+version: 0.7
 load : POSTWORLD
 authors: [Beben107700, jflory7]
 
@@ -70,6 +70,14 @@ commands:
     usage: /fly (player)
     permission: ayn.fly
     aliases: [iwannafly]
+  hat:
+    description: Put a hat on your head
+    usage: /hat
+    permission: ayn.hat
+  tell:
+    description: Whisper messages to friends
+    usage: /tell <Player> <Message>
+    permission: ayn.tell
 
     
 permissions:
@@ -88,6 +96,8 @@ permissions:
       ayn.kickall: true
       ayn.fly: true
       ayn.mypos: true
+      ayn.hat: true
+      ayn.tell: true
   ayn.ct:
     default: true
   ayn.ender:
@@ -113,4 +123,8 @@ permissions:
   ayn.fly:
     default: op
   ayn.mypos:
+    default: true
+  ayn.hat:
+    default: op
+  ayn.tell:
     default: true

@@ -6,6 +6,7 @@ import com.crystalcraftmc.allyouneed.Commands.AYNCt;
 import com.crystalcraftmc.allyouneed.Commands.AYNDefineSpawn;
 import com.crystalcraftmc.allyouneed.Commands.AYNEnder;
 import com.crystalcraftmc.allyouneed.Commands.AYNFly;
+import com.crystalcraftmc.allyouneed.Commands.AYNHat;
 import com.crystalcraftmc.allyouneed.Commands.AYNHeal;
 import com.crystalcraftmc.allyouneed.Commands.AYNHome;
 import com.crystalcraftmc.allyouneed.Commands.AYNKickall;
@@ -13,6 +14,7 @@ import com.crystalcraftmc.allyouneed.Commands.AYNMypos;
 import com.crystalcraftmc.allyouneed.Commands.AYNRules;
 import com.crystalcraftmc.allyouneed.Commands.AYNSetHome;
 import com.crystalcraftmc.allyouneed.Commands.AYNSpawn;
+import com.crystalcraftmc.allyouneed.Commands.AYNTell;
 import com.crystalcraftmc.allyouneed.Commands.AYNTpgo;
 import com.crystalcraftmc.allyouneed.Commands.AYNTphere;
 import com.crystalcraftmc.allyouneed.Commands.AYNTppos;
@@ -62,6 +64,8 @@ public final class Main extends JavaPlugin {
 		getCommand("kickall").setExecutor(new AYNKickall(this));
 		getCommand("fly").setExecutor(new AYNFly(this));
 		getCommand("mypos").setExecutor(new AYNMypos(this));
+		getCommand("hat").setExecutor(new AYNHat(this));
+		getCommand("tell").setExecutor(new AYNTell(this));
 		
 		// Commands/
 
