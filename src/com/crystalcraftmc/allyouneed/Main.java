@@ -40,7 +40,6 @@ public final class Main extends JavaPlugin {
 		AYNHome.HomeListConfig = HLC;
 		// HomeList/
 
-
 		// Config
 		this.saveDefaultConfig();
 		this.getConfig().options().copyDefaults(true);
@@ -66,8 +65,8 @@ public final class Main extends JavaPlugin {
 		getCommand("mypos").setExecutor(new AYNMypos(this));
 		getCommand("hat").setExecutor(new AYNHat(this));
 		getCommand("tell").setExecutor(new AYNTell(this));
-		
 		// Commands/
+	
 
 	}
 

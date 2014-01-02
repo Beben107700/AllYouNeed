@@ -78,6 +78,7 @@ commands:
     description: Whisper messages to friends
     usage: /tell <Player> <Message>
     permission: ayn.tell
+    aliases: [msg, tell, r]
 
     
 permissions:

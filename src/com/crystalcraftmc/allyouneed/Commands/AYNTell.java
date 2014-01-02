@@ -1,5 +1,6 @@
 package com.crystalcraftmc.allyouneed.Commands;
 
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -18,14 +19,20 @@ public class AYNTell implements CommandExecutor{
 		if(args.length >=2 &&  plugin.getServer().getPlayer(args[0]) != null){
 		
 		Player reciever = plugin.getServer().getPlayer(args[0]);
-		String prefix = "["+ sender.getName() + "->" + args[0] + "]";
-		String message = null;
-		//TODO from args[1] to args[infinite] into one string
-		//maybe use for?
+		String prefix = ChatColor.GRAY+ "["+ sender.getName() + "->" + reciever.getName() + "]";
+		String message = "";
+		
+		for(int i = 0; i<args.length; i++){
+			if(i != 0){
+				String thing = args[i] + " ";
+				message += thing;
+			}
+		}
 		
 		
-		reciever.sendMessage(prefix);
-		sender.sendMessage(prefix);
+		String endresult = prefix + message;
+		reciever.sendMessage(endresult);
+		sender.sendMessage(endresult);
 		
 		return true;
 		}
@@ -33,5 +40,4 @@ public class AYNTell implements CommandExecutor{
 			return false;
 		}
 	}
-
 }
