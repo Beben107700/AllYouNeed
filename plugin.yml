@@ -1,6 +1,6 @@
 name: All You Need
 main: com.crystalcraftmc.allyouneed.Main
-version: 0.7
+version: 1.0
 load : POSTWORLD
 authors: [Beben107700, jflory7]
 
