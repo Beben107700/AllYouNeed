@@ -11,6 +11,7 @@ import com.crystalcraftmc.allyouneed.Commands.AYNHeal;
 import com.crystalcraftmc.allyouneed.Commands.AYNHome;
 import com.crystalcraftmc.allyouneed.Commands.AYNKickall;
 import com.crystalcraftmc.allyouneed.Commands.AYNMypos;
+import com.crystalcraftmc.allyouneed.Commands.AYNRepair;
 import com.crystalcraftmc.allyouneed.Commands.AYNRules;
 import com.crystalcraftmc.allyouneed.Commands.AYNSetHome;
 import com.crystalcraftmc.allyouneed.Commands.AYNSpawn;
@@ -65,6 +66,7 @@ public final class Main extends JavaPlugin {
 		getCommand("mypos").setExecutor(new AYNMypos(this));
 		getCommand("hat").setExecutor(new AYNHat(this));
 		getCommand("tell").setExecutor(new AYNTell(this));
+		getCommand("repair").setExecutor(new AYNRepair(this));
 		// Commands/
 	
 

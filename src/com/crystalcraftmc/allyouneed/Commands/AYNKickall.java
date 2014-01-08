@@ -1,8 +1,5 @@
 package com.crystalcraftmc.allyouneed.Commands;
 
-import java.util.Arrays;
-
-import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -21,12 +18,17 @@ public class AYNKickall implements CommandExecutor {
 			String[] args) {
 		String message = "Kicked by an operator";
 		if (args.length > 0) {
-			message = Arrays.toString(args).replaceAll("," , " ");
-			message = ChatColor.translateAlternateColorCodes('&', message);
+			message = "";			
+			for(int i = 0; i<args.length; i++){
+				
+					String thing = args[i] + " ";
+					message += thing;
+				
+			}
 		}
 		for (Player p : plugin.getServer().getOnlinePlayers()) {
 			if (p != sender) {
-				p.kickPlayer(message);
+				p.kickPlayer("§4Kicked with reason: "+message);
 			}
 		}
 		sender.sendMessage("§4Kicked all players with reason: §r" + message);

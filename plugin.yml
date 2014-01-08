@@ -1,6 +1,6 @@
 name: All You Need
 main: com.crystalcraftmc.allyouneed.Main
-version: 0.7
+version: 1.0
 load : POSTWORLD
 authors: [Beben107700, jflory7]
 
@@ -79,6 +79,10 @@ commands:
     usage: /tell <Player> <Message>
     permission: ayn.tell
     aliases: [msg, tell, r]
+  repair:
+    description: Repair the item you are holding
+    usage: /repair
+    permission: ayn.repair
 
     
 permissions:
@@ -99,6 +103,7 @@ permissions:
       ayn.mypos: true
       ayn.hat: true
       ayn.tell: true
+      ayn.repair: true
   ayn.ct:
     default: true
   ayn.ender:
@@ -129,3 +134,5 @@ permissions:
     default: op
   ayn.tell:
     default: true
+  ayn.repair:
+    default: op

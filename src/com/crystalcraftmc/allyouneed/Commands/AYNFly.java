@@ -27,6 +27,7 @@ public class AYNFly implements CommandExecutor {
 				p.setAllowFlight(!flying);
 				p.setFlying(!flying);
 				p.sendMessage("Fly mode changed!");
+				
 				return true;
 			} else {
 				if (plugin.getServer().getPlayer(args[0]) != null) {
@@ -35,7 +36,7 @@ public class AYNFly implements CommandExecutor {
 					pl.setAllowFlight(!flying);
 					pl.setFlying(!flying);
 					
-					pl.sendMessage(sender.getName() + " changed your fly mode");
+					pl.sendMessage(sender.getName() + " changed your fly mode to " + !flying);
 
 					return true;
 				} else {
