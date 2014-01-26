@@ -105,31 +105,31 @@ permissions:
       ayn.tell: true
       ayn.repair: true
   ayn.ct:
-    default: true
+    default: op
   ayn.ender:
-    default: true
+    default: op
   ayn.tpgo:
     default: op
   ayn.definespawn:
     default: op
   ayn.spawn:
-    default: true
+    default: op
   ayn.home:
-    default: true
+    default: op
   ayn.sethome:
-    default: true
+    default: op
   ayn.heal:
     default: op
   ayn.usebannedblocks:
     default: op
   ayn.rules:
-    default: true
+    default: op
   ayn.kickall:
     default: op
   ayn.fly:
     default: op
   ayn.mypos:
-    default: true
+    default: op
   ayn.hat:
     default: op
   ayn.tell:
